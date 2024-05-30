@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <title>CodeSphere</title>
+  <script src="funciones.js"></script>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+      <nav class="navbar navbar-expand-lg bg-dark-blue">
+          <div class="container-fluid d-flex align-items-center justify-content-around">
+              <div class="d-flex align-items-center justify-content-around w-100 flex-wrap">
+                  <img src="./images/logo_sf1.png" alt="logo, slogan" class="logotitulo me-auto">
+                  <form class="d-flex mx-auto" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                      <button class="btn btn-outline-success btn-buscar" type="submit">Buscar</button>
+                  </form>
+                  <div class="d-flex align-items-center ms-auto">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                      </button>
+                  </div>
+              </div>
+              <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                          <a class="nav-link active menu nav-a" id="nav-a" aria-current="page" href="./index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link nav-a" href="#seccion1">Sobre nosotros</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle nav-a" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Explorar</a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#seccion2">Cursos disponibles</a></li>
+                              <li><a class="dropdown-item" href="#seccion3">Populares</a></li>
+                              <li><a class="dropdown-item" href="#seccion4">Programación en la <br>actualidad</a></li>
+                              <li><a class="dropdown-item" href="#seccion5">Información de los <br>cursos</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="./formulario.html">Carrito de compras</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+  </header>
+
+  <header class="header-fixed">
+      <nav class="navbar navbar-expand-lg bg-dark-blue">
+          <div class="container-fluid d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center justify-content-between w-100">
+              <img src="./images/logo_sf1.png" alt="logo, slogan" class="logotitulo">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContentFixed"
+                      aria-controls="navbarSupportedContentFixed" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContentFixed">
+                  <div class="redes-soc">
+                      <ul class="navbar-nav">
+                          <li class="nav-item"><a href="#"><img class="icono" src="./images/iconos/facebook.png" alt="Icono facebook"></a></li>
+                          <li class="nav-item"><a href="#"><img class="icono" src="./images/iconos/Instagram.png" alt="Icono Instagram"></a></li>
+                          <li class="nav-item"><a href="#"><img class="icono" src="./images/iconos/tiktok.png" alt="Icono TikTok"></a></li>
+                          <li class="nav-item"><a href="#"><img class="icono" src="./images/iconos/youtube.png" alt="Icono YouTube"></a></li>
+                          <li class="nav-item">
+                              <a href="https://wa.me/15551234567" class="whatsapp-icon">
+                                  <img src="./images/iconos/whatsapp.png" alt="WhatsApp" class="icono">
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+                  </div>
+              </div>
+              <div class="collapse navbar-collapse" id="navbarSupportedContentFixed">
+                
+                  <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
+                      <li class="nav-item">
+                          <a class="nav-link active menu" id="nav-a" aria-current="page" href="./index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link nav-a" href="#seccion1">Sobre nosotros</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle nav-a" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Explorar</a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#seccion2">Cursos disponibles</a></li>
+                              <li><a class="dropdown-item" href="#seccion3">Populares</a></li>
+                              <li><a class="dropdown-item" href="#seccion4">Programación en la <br>actualidad</a></li>
+                              <li><a class="dropdown-item" href="#seccion5">Información de los <br>cursos</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="./formulario.html">Carrito de compras</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+  </header>
+  
+  <main>
+    
+    <div class="container marketing panel-p">
+      <h1 class="titulo">Nuestros profesores</h1>
+      <div class="row">
+        <div class="col-lg-4 perfil-prof">
+          <img src="./images/profes/img1.jpg" class="foto-perfil">
+          <p class="fw-normal"><strong>Dr. María López</strong></p>
+          <p><strong><i>Especialidad:</i></strong> Inteligencia Artificial y Machine Learning.</p>
+          <p><a class="btn btn-secondary" href="#" onclick="desplegarDetalles(event)">Ver detalles</a></p>
+          <div class="details-container" style="display: none;">
+            <p><strong><i>Experiencia:</i></strong> Más de 10 años investigando y enseñando en el campo de la IA y el
+              ML.</p>
+            <p><strong><i>Descripción:</i></strong> La Dra. López es una experta reconocida internacionalmente en el
+              área de Inteligencia
+              Artificial y Machine Learning. Su pasión por la innovación y la enseñanza la ha llevado a desarrollar
+              cursos dinámicos y prácticos que ayudan a los estudiantes a comprender los conceptos más complejos
+              de manera sencilla.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 perfil-prof">
+          <img src="./images/profes/img2.jpg" class="foto-perfil">
+          <p class="fw-normal"><strong>Ing. Javier Rodríguez</strong></p>
+          <p><strong><i>Especialidad:</i></strong> Desarrollo Web y Frameworks.</p>
+          <p><a class="btn btn-secondary" href="#" onclick="desplegarDetalles(event)">Ver detalles</a></p>
+          <div class="details-container" style="display: none;">
+            <p><strong><i>Experiencia:</i></strong> Amplia experiencia en desarrollo de aplicaciones web y diseño de
+              interfaces.</p>
+            <p><strong><i>Descripción:</i></strong> El Ingeniero Rodríguez es un apasionado del desarrollo
+              web y los frameworks modernos como React y Angular. Su enfoque práctico y orientado a proyectos
+              permite a los estudiantes adquirir habilidades sólidas para construir aplicaciones web atractivas y
+              funcionales.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 perfil-prof">
+          <img src="./images/profes/img3.jpg" class="foto-perfil">
+          <p class="fw-normal"><strong>Lic. Ana Martínez</strong></p>
+          <p><strong><i>Especialidad:</i></strong> Experta en análisis de datos y Python.</p>
+          <p><a class="btn btn-secondary" href="#" onclick="desplegarDetalles(event)">Ver detalles</a></p>
+          <div class="details-container" style="display: none;">
+            <p><strong><i>Experiencia:</i></strong> Experta en análisis de datos con Python y uso de bibliotecas como
+              Pandas y NumPy.</p>
+            <p><strong><i>Descripción:</i></strong> La Licenciada Martínez es una profesional en el campo
+              del análisis de datos con una sólida experiencia en Python y herramientas de análisis estadístico.
+              Sus cursos están diseñados para ayudar a los estudiantes a dominar las técnicas de análisis de datos
+              y utilizarlas de manera efectiva en diferentes contextos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+      <div id="contenedor-secciones">
+        <div class="seccion-imagen" id="seccion1">
+          <h2 class="titulo1">¿Por qué elegir esta escuela?</h2>
+          <div class="imagen-hover">
+            <div>
+              <img src="./images/seccion_1/img1.jpg" alt="Imagen" class="imagen">
+              <div class="texto-hover">
+                <div class="descripcion">
+                  <p class="p">
+                    <span class="subtitulo">Enfoque Práctico:</span> Nuestra escuela de programación se distingue por su
+                    enfoque práctico y centrado
+                    en proyectos reales. Los estudiantes aprenden mediante la práctica directa, desarrollando habilidades
+                    que son aplicables de inmediato en la industria.
+                  </p>
+                  <br>
+                  <p class="p">
+                    <span class="subtitulo">Profesores Expertos: </span> Contamos con un equipo de profesores altamente
+                    capacitados y con experiencia
+                    en la industria tecnológica. Su conocimiento y experiencia práctica garantizan una enseñanza de
+                    alta calidad y relevante para el mercado laboral actual.
+                  </p>
+                  <br>
+                  <p class="p">
+                    <span class="subtitulo">Flexibilidad:</span> Entendemos que cada estudiante tiene sus propias
+                    responsabilidades y horarios. 
+                    Por ello, ofrecemos flexibilidad en los horarios de clases y la posibilidad de acceder al contenido desde
+                    cualquier lugar, adaptándonos a las necesidades individuales de cada estudiante.
+                  </p>
+                  <br>
+                  <p class="p">
+                    <span class="subtitulo">Comunidad Activa:</span> Nuestra comunidad de estudiantes y alumni es una
+                    parte fundamental de la
+                    experiencia de aprendizaje. Aquí, se fomenta la colaboración, el intercambio de conocimientos y
+                    la creación de redes profesionales que perduran más allá de las aulas virtuales.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="linea">
+        
+        <div class="seccion-imagen1">
+          <h2 class="titulo2">Ventajas y Beneficios</h2>
+          <div class="imagen-hover1">
+            <div>
+              <img src="./images/seccion_1/img2.jpg" alt="Imagen" class="imagen1">
+              <div class="texto-hover1">
+                <div class="descripcion">
+                  <p class="p">
+                    <span class="subtitulo">Cursos Actualizados:</span> Nuestros cursos están diseñados
+                    para reflejar las últimas tendencias y tecnologías en el campo de la programación. Constantemente
+                    actualizamos el contenido para asegurar que nuestros estudiantes estén preparados para
+                    los desafíos del mundo real.
+                  </p>
+                  <br>
+                  <p class="p">
+                    <span class="subtitulo">Certificaciones: </span>  Al completar ciertos programas, los
+                    estudiantes tienen la oportunidad de obtener certificaciones reconocidas en la industria, lo
+                    que aumenta sus oportunidades laborales y su credibilidad como profesionales de la programación.
+                  </p>
+                  <br>
+                  <p class="p">
+                    <span class="subtitulo">Networking:</span> Facilitamos el networking con profesionales
+                    del sector y empresas asociadas, proporcionando oportunidades de prácticas, colaboraciones
+                    en proyectos y conexiones valiosas que pueden impulsar la carrera de nuestros estudiantes.
+                  </p>
+                  <br>
+                  <p class="p">
+                    <span class="subtitulo">Soporte y Tutoría:</span> Nuestro equipo de soporte y tutores
+                    está siempre disponible para brindar asistencia personalizada a los estudiantes, asegurando
+                    que reciban la orientación y el apoyo necesarios para alcanzar sus objetivos educativos y profesionales.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="linea">
+        
+        <div class="seccion-imagen">
+          <h1 class="titulo1">Otros Contenidos</h1>
+          <div class="imagen-hover">
+            <div>
+              <img src="./images/seccion_1/img3.jpg" alt="Imagen" class="imagen">
+              <div class="texto-hover">
+                <div class="descripcion">
+                  <p class="p">
+                    <span class="subtitulo">Testimonios:</span> Descubre historias de éxito de nuestros
+                    estudiantes y alumnos, quienes han logrado avances significativos en sus carreras después
+                    de graduarse de nuestra escuela.
+                  </p>
+                  <br>
+                  <p class="p">
+                    <span class="subtitulo">Demostraciones: </span>Explora proyectos destacados
+                    realizados por nuestros estudiantes como parte de su formación, demostrando las habilidades
+                    y competencias adquiridas durante su tiempo con nosotros.
+                  </p>
+                  <br>
+                  <p class="p">
+                    <span class="subtitulo">Eventos y Talleres:</span> Mantente al tanto de nuestros
+                    eventos, talleres y charlas especiales donde se abordan temas relevantes y se ofrecen oportunidades
+                    para aprender, conectar y crecer en el campo de la programación.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <hr>
+    
+    <div class="album py-3 bg-body-tertiary" id="seccion2">
+      <h3 class="titulo3">Cursos disponibles</h3>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-3 mx-3">
+          <div class="col cursos-dis">
+            <div class="card shadow-sm custom-card h-100">
+              <img class="img-cursos" src="./images/cursos/img1.jpg" alt="Imagen curso 1">
+              <div class="card-body d-flex flex-column align-items-center">
+                <p class="card-text ">Introducción a la Programación: Fundamentos de programación para principiantes.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Más información</button>
+                  </div>
+                </div>
+              </div>
+              <div class="collapse">
+                <div class="card-body">
+                  <p ><b><i>Descripción:</i></b> Fundamentos de programación para principiantes.</p>
+                  <p><b><i>Nivel:</i></b> Principiante</p>
+                  <p><b><i>Horas de estudio:</i></b> 40 horas</p>
+                  <p><b><i> Duración:</i></b> 4 semanas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col cursos-dis">
+            <div class="card shadow-sm">
+              <img class="img-cursos" src="./images/cursos/img2.jpg" alt="Imagen curso 2">
+              <div class="card-body d-flex flex-column align-items-center">
+                <p class="card-text">Desarrollo Web Completo: Aprende HTML, CSS, JavaScript y frameworks como React o
+                  Angular.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Más información</button>
+                  </div>
+                </div>
+              </div>
+              <div class="collapse">
+                <div class="card-body">
+                  <p><b><i>Descripción:</i></b> Aprende HTML, CSS, JavaScript y frameworks como React o Angular.</p>
+                  <p><b><i>Nivel:</i></b> Intermedio</p>
+                  <p><b><i>Horas de estudio:</i></b> 60 horas</p>
+                  <p><b><i> Duración:</i></b> 6 semanas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="img-cursos" src="./images/cursos/img3.jpg" alt="Imagen curso 3">
+              <div class="card-body d-flex flex-column align-items-center">
+                <p class="card-text">Python para Todos: Curso introductorio a Python, un lenguaje de programación
+                  versátil.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Más información</button>
+                  </div>
+                </div>
+              </div>
+              <div class="collapse">
+                <div class="card-body">
+                  <p><b><i>Descripción:</i></b> Curso introductorio a Python, un lenguaje de programación versátil.</p>
+                  <p><b><i>Nivel:</i></b> Principiante</p>
+                  <p><b><i>Horas de estudio:</i></b> 50 horas</p>
+                  <p><b><i> Duración:</i></b> 5 semanas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="img-cursos" src="./images/cursos/img4.jpg" alt="Imagen curso 4">
+              <div class="card-body d-flex flex-column align-items-center">
+                <p class="card-text">Inteligencia Artificial y Machine Learning: Curso sobre conceptos básicos de IA y
+                  ML.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Más información</button>
+                  </div>
+                </div>
+              </div>
+              <div class="collapse">
+                <div class="card-body">
+                  <p><b><i>Descripción:</i></b> Curso sobre conceptos básicos de IA y ML.</p>
+                  <p><b><i>Nivel:</i></b> Avanzado</p>
+                  <p><b><i>Horas de estudio:</i></b> 80 horas</p>
+                  <p><b><i> Duración:</i></b> 8 semanas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="img-cursos" src="./images/cursos/img5.jpg" alt="Imagen curso 5">
+              <div class="card-body d-flex flex-column align-items-center">
+                <p class="card-text">Big Data y Análisis de Datos: Curso sobre manejo de grandes volúmenes de datos.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Más información</button>
+                  </div>
+                </div>
+              </div>
+              <div class="collapse">
+                <div class="card-body">
+                  <p><b><i>Descripción:</i></b> Curso sobre manejo de grandes volúmenes de datos.</p>
+                  <p><b><i>Nivel:</i></b> Avanzado</p>
+                  <p><b><i>Horas de estudio:</i></b> 90 horas</p>
+                  <p><b><i> Duración:</i></b> 9 semanas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm custom-card h-100">
+              <img class="img-cursos" src="./images/cursos/img6.jpg" alt="Imagen curso 6">
+              <div class="card-body d-flex flex-column align-items-center">
+                <p class="card-text">Ciberseguridad: Curso sobre protección de datos y seguridad en línea.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Más información</button>
+                  </div>
+                </div>
+              </div>
+              <div class="collapse">
+                <div class="card-body">
+                  <p><b><i>Descripción:</i></b> Curso sobre protección de datos y seguridad en línea.</p>
+                  <p><b><i>Nivel:</i></b> Avanzado</p>
+                  <p><b><i>Horas de estudio:</i></b> 60 horas</p>
+                  <p><b><i> Duración:</i></b> 6 semanas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm custom-card h-100">
+              <img class="img-cursos" src="./images/cursos/img7.jpg" alt="Imagen curso 7">
+              <div class="card-body d-flex flex-column align-items-center">
+                <p class="card-text">Blockchain y Criptomonedas: Introducción a la tecnología blockchain y
+                  criptomonedas.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Más información</button>
+                  </div>
+                </div>
+              </div>
+              <div class="collapse">
+                <div class="card-body">
+                  <p><b><i>Descripción:</i></b> Introducción a la tecnología blockchain y criptomonedas como Bitcoin.
+                  </p>
+                  <p><b><i>Nivel:</i></b> Intermedio</p>
+                  <p><b><i>Horas de estudio:</i></b> 40 horas</p>
+                  <p><b><i> Duración:</i></b> 4 semanas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm custom-card h-100">
+              <img class="img-cursos" src="./images/cursos/img8.jpg" alt="Imagen curso 8">
+              <div class="card-body d-flex flex-column align-items-center">
+                <p class="card-text">Desarrollo de Aplicaciones Móviles: Aprende a crear aplicaciones para Android e
+                  iOS.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Más información</button>
+                  </div>
+                </div>
+              </div>
+              <div class="collapse">
+                <div class="card-body">
+                  <p><b><i>Descripción:</i></b> Aprende a crear aplicaciones para Android e iOS.</p>
+                  <p><b><i>Nivel:</i></b> Intermedio</p>
+                  <p><b><i>Horas de estudio:</i></b> 70 horas</p>
+                  <p><b><i> Duración:</i></b> 7 semanas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="img-cursos" src="./images/cursos/img9.jpg" alt="Imagen curso 9">
+              <div class="card-body d-flex flex-column align-items-center">
+                <p class="card-text">Diseño UX/UI: Aprende los principios de diseño de experiencia de usuario e interfaz
+                  de usuario.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Más información</button>
+                  </div>
+                </div>
+              </div>
+              <div class="collapse">
+                <div class="card-body">
+                  <p><b><i>Descripción:</i></b> Aprende los principios de diseño de experiencia de usuario e interfaz de
+                    usuario.</p>
+                  <p><b><i>Nivel:</i></b> Intermedio</p>
+                  <p><b><i>Horas de estudio:</i></b> 50 horas</p>
+                  <p><b><i> Duración:</i></b> 5 semanas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="img-cursos" src="./images/cursos/img10.jpg" alt="Imagen curso 10">
+              <div class="card-body d-flex flex-column align-items-center">
+                <p class="card-text">Cloud Computing: Curso sobre servicios en la nube como AWS, Azure o Google Cloud.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Más información</button>
+                  </div>
+                </div>
+              </div>
+              <div class="collapse">
+                <div class="card-body">
+                  <p><b><i>Descripción:</i></b> Curso sobre servicios en la nube como AWS, Azure o Google Cloud.</p>
+                  <p><b><i>Nivel:</i></b> Avanzado</p>
+                  <p><b><i>Horas de estudio:</i></b> 70 horas</p>
+                  <p><b><i> Duración:</i></b> 7 semanas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm custom-card h-100">
+              <img class="img-cursos" src="./images/cursos/img11.jpg" alt="Imagen curso 11">
+              <div class="card-body d-flex flex-column align-items-center">
+                <p class="card-text">IoT (Internet of Things): Introducción a la Internet de las cosas y sus
+                  aplicaciones.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Más información</button>
+                  </div>
+                </div>
+              </div>
+              <div class="collapse">
+                <div class="card-body">
+                  <p><b><i>Descripción:</i></b> Introducción a la Internet de las cosas y sus aplicaciones.</p>
+                  <p><b><i>Nivel:</i></b> Intermedio</p>
+                  <p><b><i>Horas de estudio:</i></b> 60 horas</p>
+                  <p><b><i> Duración:</i></b> 6 semanas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm custom-card h-100">
+              <img class="img-cursos" src="./images/cursos/img12.jpg" alt="Imagen curso 12">
+              <div class="card-body d-flex flex-column align-items-center">
+                <p class="card-text">Realidad Virtual y Aum.: Curso sobre RV y RA y su aplicación en diversas
+                  industrias.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Más información</button>
+                  </div>
+                </div>
+              </div>
+              <div class="collapse">
+                <div class="card-body">
+                  <p><b><i>Descripción:</i></b> Curso sobre RV y RA y su aplicación en diversas industrias.</p>
+                  <p><b><i>Nivel:</i></b> Intermedio</p>
+                  <p><b><i>Horas de estudio:</i></b> 50 horas</p>
+                  <p><b><i> Duración:</i></b> 5 semanas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="img-cursos" src="./images/cursos/img13.jpg" alt="Imagen curso 13">
+              <div class="card-body d-flex flex-column align-items-center">
+                <p class="card-text">Desarrollo de Videojuegos: Aprende a crear videojuegos desde cero.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Más información</button>
+                  </div>
+                </div>
+              </div>
+              <div class="collapse">
+                <div class="card-body">
+                  <p><b><i>Descripción:</i></b> Aprende a crear videojuegos desde cero.</p>
+                  <p><b><i>Nivel:</i></b> Avanzado</p>
+                  <p><b><i>Horas de estudio:</i></b> 80 horas</p>
+                  <p><b><i> Duración:</i></b> 8 semanas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="img-cursos" src="./images/cursos/img14.jpg" alt="Imagen curso 14">
+              <div class="card-body d-flex flex-column align-items-center">
+                <p class="card-text">Programación en Java: Curso avanzado de programación en Java.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Más información</button>
+                  </div>
+                </div>
+              </div>
+              <div class="collapse">
+                <div class="card-body">
+                  <p><b><i>Descripción:</i></b> Curso avanzado de programación en Java.</p>
+                  <p><b><i>Nivel:</i></b> Intermedio</p>
+                  <p><b><i>Horas de estudio:</i></b> 60 horas</p>
+                  <p><b><i> Duración:</i></b> 6 semanas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm custom-card h-100">
+              <img class="img-cursos" src="./images/cursos/img15.jpg" alt="Imagen curso 15">
+              <div class="card-body d-flex flex-column align-items-center">
+                <p class="card-text">Robótica: Introducción a la robótica y sus aplicaciones.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Más información</button>
+                  </div>
+                </div>
+              </div>
+              <div class="collapse">
+                <div class="card-body">
+                  <p><b><i>Descripción:</i></b> Introducción a la robótica y sus aplicaciones.</p>
+                  <p><b><i>Nivel:</i></b> Avanzado</p>
+                  <p><b><i>Horas de estudio:</i></b> 70 horas</p>
+                  <p><b><i> Duración:</i></b> 7 semanas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm custom-card h-100">
+              <img class="img-cursos" src="./images/cursos/img16.jpg" alt="Imagen curso 16">
+              <div class="card-body d-flex flex-column align-items-center">
+                <p class="card-text">Automatización de Procesos: Aprende a automatizar tareas utilizando scripts y
+                  herramientas.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Más información</button>
+                  </div>
+                </div>
+              </div>
+              <div class="collapse">
+                <div class="card-body">
+                  <p><b><i>Descripción:</i></b> Aprende a automatizar tareas utilizando scripts y herramientas.</p>
+                  <p><b><i>Nivel:</i></b> Intermedio</p>
+                  <p><b><i>Horas de estudio:</i></b> 50 horas</p>
+                  <p><b><i> Duración:</i></b> 5 semanas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm custom-card h-100">
+              <img class="img-cursos" src="./images/cursos/img17.jpg" alt="Imagen curso 17">
+              <div class="card-body d-flex flex-column align-items-center">
+                <p class="card-text">Seguridad Informática: Curso sobre técnicas de seguridad informática y prevención
+                  de ataques cibernéticos.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group ">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Más información</button>
+                  </div>
+                </div>
+              </div>
+              <div class="collapse">
+                <div class="card-body">
+                  <p><b><i>Descripción:</i></b> Curso sobre técnicas de seguridad informática y prevención de ataques.
+                  </p>
+                  <p><b><i>Nivel:</i></b> Avanzado</p>
+                  <p><b><i>Horas de estudio:</i></b> 60 horas</p>
+                  <p><b><i> Duración:</i></b> 6 semanas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="img-cursos" src="./images/cursos/img18.jpg" alt="Imagen curso 18">
+              <div class="card-body d-flex flex-column align-items-center">
+                <p class="card-text">Análisis de Datos con Python: Curso avanzado análisis de datos con Python y
+                  bibliotecas como Pandas y NumPy.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Más información</button>
+                  </div>
+                </div>
+              </div>
+              <div class="collapse">
+                <div class="card-body">
+                  <p><b><i>Descripción:</i></b> Curso avanzado sobre análisis de datos utilizando Python y bibliotecas
+                    como Pandas y NumPy.</p>
+                  <p><b><i>Nivel:</i></b> Avanzado</p>
+                  <p><b><i>Horas de estudio:</i></b> 80 horas</p>
+                  <p><b><i> Duración:</i></b> 8 semanas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm custom-card h-100">
+              <img class="img-cursos" src="./images/cursos/img19.jpg" alt="Imagen curso 19">
+              <div class="card-body d-flex flex-column align-items-center">
+                <p class="card-text">Desarrollo de Aplicaciones Empresariales: Aprende a crear aplicaciones
+                  empresariales escalables y seguras.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Más información</button>
+                  </div>
+                </div>
+              </div>
+              <div class="collapse">
+                <div class="card-body">
+                  <p><b><i>Descripción:</i></b> Aprende a crear aplicaciones empresariales escalables y seguras.</p>
+                  <p><b><i>Nivel:</i></b> Intermedio</p>
+                  <p><b><i>Horas de estudio:</i></b> 60 horas</p>
+                  <p><b><i> Duración:</i></b> 6 semanas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img class="img-cursos" src="./images/cursos/img20.jpg" alt="Imagen curso 20">
+              <div class="card-body d-flex flex-column align-items-center">
+                <p class="card-text">Gestión de Proyectos Tecnológicos: Curso sobre metodologías y herramientas para la
+                  gestión de proyectos tecnológicos.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Más información</button>
+                  </div>
+                </div>
+              </div>
+              <div class="collapse">
+                <div class="card-body">
+                  <p><b><i>Descripción:</i></b> Curso sobre herramientas para la gestión de proyectos tecnológicos</p>
+                  <p><b><i>Nivel:</i></b> Avanzado</p>
+                  <p><b><i>Horas de estudio:</i></b> 50 horas</p>
+                  <p><b><i> Duración:</i></b> 5 semanas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div>
+      
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <h3 class="titulo4" id="seccion3">Cursos Populares</h3>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+            aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/carrusel/img1.png" class="d-block img-carrusel" alt="...">
+            <div class="carousel-caption txt-img-carr">
+              <h5>Desarrollo Web Completo: Aprende HTML, CSS, JavaScript y frameworks como React o Angular</h5>
+              <strong></strong>
+              <p>
+                Desde la estructura básica hasta la implementación de frameworks modernos como React y
+                Angular, este curso te guiará en el camino para convertirte en un desarrollador web completo.
+                Aprenderás a crear sitios web dinámicos e interactivos con las últimas tecnologías.
+              </p>
+              <h6><strong>Beneficios:</strong></h6>
+              <p>Domina las tecnologías clave para el desarrollo web moderno.</p>
+              <p>Crea sitios web dinámicos e interactivos con las últimas herramientas y técnicas.</p>
+              <h6><strong>Aspectos destacados:</strong></h6>
+              <p>Proyectos de desarrollo web desde cero con énfasis en la usabilidad y el diseño.</p>
+              <p>Tutorías en vivo para resolver desafíos de desarrollo web y optimización de rendimiento.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/carrusel/img2.jpg" class="d-block img-carrusel" alt="...">
+            <div class="carousel-caption txt-img-carr">
+              <h5>Robótica: Introducción a la robótica y sus aplicaciones</h5><strong></strong>
+              <p>
+                Sumérgete en el fascinante mundo de la robótica con nuestro curso introductorio. Aprenderás los
+                fundamentos de la robótica y explorarás sus diversas aplicaciones en la vida real.
+              </p>
+              <h6><strong>Beneficios:</strong></h6>
+              <p>Aprende a diseñar y programar robots desde cero.</p>
+              <p> Explora áreas como la robótica móvil, la inteligencia artificial en robots y la automatización
+                industrial.</p>
+              <h6><strong>Aspectos destacados:</strong></h6>
+              <p>Prácticas con robots reales para aplicar lo aprendido.</p>
+              <p>Proyectos de innovación donde podrás desarrollar soluciones robóticas creativas.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/carrusel/img3.jpg" class="d-block img-carrusel" alt="...">
+            <div class="carousel-caption txt-img-carr">
+              <h5>Robótica: Introducción a la robótica y sus aplicaciones</h5><strong></strong>
+              <p>
+                Sumérgete en el fascinante mundo de la robótica con nuestro curso introductorio. Aprenderás los
+                fundamentos de la robótica y explorarás sus diversas aplicaciones en la vida real.
+              </p>
+              <h6><strong>Beneficios:</strong></h6>
+              <p>Aprende a diseñar y programar robots desde cero.</p>
+              <p> Explora áreas como la robótica móvil, la inteligencia artificial en robots y la automatización
+                industrial.</p>
+              <h6><strong>Aspectos destacados:</strong></h6>
+              <p>Prácticas con robots reales para aplicar lo aprendido.</p>
+              <p>Proyectos de innovación donde podrás desarrollar soluciones robóticas creativas.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/carrusel/img4.jpg" class="d-block img-carrusel" alt="...">
+            <div class="carousel-caption txt-img-carr">
+              <h5>Robótica: Introducción a la robótica y sus aplicaciones</h5><strong></strong>
+              <p>
+                Sumérgete en el fascinante mundo de la robótica con nuestro curso introductorio. Aprenderás los
+                fundamentos de la robótica y explorarás sus diversas aplicaciones en la vida real.
+              </p>
+              <h6><strong>Beneficios:</strong></h6>
+              <p>Aprende a diseñar y programar robots desde cero.</p>
+              <p> Explora áreas como la robótica móvil, la inteligencia artificial en robots y la automatización
+                industrial.</p>
+              <h6><strong>Aspectos destacados:</strong></h6>
+              <p>Prácticas con robots reales para aplicar lo aprendido.</p>
+              <p>Proyectos de innovación donde podrás desarrollar soluciones robóticas creativas.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/carrusel/img5.jpg" class="d-block img-carrusel" alt="...">
+            <div class="carousel-caption txt-img-carr">
+              <h5>Robótica: Introducción a la robótica y sus aplicaciones</h5><strong></strong>
+              <p>
+                Sumérgete en el fascinante mundo de la robótica con nuestro curso introductorio. Aprenderás los
+                fundamentos de la robótica y explorarás sus diversas aplicaciones en la vida real.
+              </p>
+              <h6><strong>Beneficios:</strong></h6>
+              <p>Aprende a diseñar y programar robots desde cero.</p>
+              <p> Explora áreas como la robótica móvil, la inteligencia artificial en robots y la automatización
+                industrial.</p>
+              <h6><strong>Aspectos destacados:</strong></h6>
+              <p>Prácticas con robots reales para aplicar lo aprendido.</p>
+              <p>Proyectos de innovación donde podrás desarrollar soluciones robóticas creativas.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <hr>
+
+    <h6 class="titulo">La programación en nuestras vidas.</h6>
+    <div class="row featurette" id="seccion4">
+      <div class="col-md-7 contenedor-article">
+        <h6 class="featurette-heading fw-normal lh-1 subtitulo-art">La Importancia de la Programación en la Era Digital.
+        </h6>
+        <p class="lead">En la actualidad, la programación se ha convertido en una habilidad fundamental en
+          la era digital. Ya no es solo un conocimiento especializado para los ingenieros de software, sino que
+          se ha vuelto relevante en diversas áreas y para todas las edades.
+        </p><br>
+        <h6 class="featurette-heading fw-normal lh-1 subtitulo-art">Beneficios para todas las edades.</h6>
+        <p class="lead">La programación no tiene límites de edad. Desde los niños hasta los adultos mayores,
+          aprender a programar estimula el pensamiento lógico, la creatividad y la resolución de problemas. En
+          los jóvenes, fomenta habilidades de pensamiento crítico y prepara para las carreras del futuro. En adultos,
+          puede abrir nuevas oportunidades laborales y mejorar la comprensión de la tecnología.
+        </p><br>
+        <h6 class="featurette-heading fw-normal lh-1 subtitulo-art">Para Niños y Jóvenes.</h6>
+        <p class="lead">Aprender a programar desde temprana edad estimula el pensamiento lógico y creativo.
+          Ayuda a desarrollar habilidades de resolución de problemas y fomenta la innovación. Además, prepara
+          a las nuevas generaciones para carreras tecnológicas del futuro.
+        </p>
+      </div>
+      <div class="col-md-5">
+        <img class="img-articulo1-3" src="./images/articulos/img1.jpg" alt="">
+      </div>
+    </div>
+
+    <hr class="linea">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2 contenedor-article">
+        <h6 class="featurette-heading fw-normal lh-1 subtitulo-art">Para Adultos y Profesionales.</h6>
+        <p class="lead">En el mundo laboral actual, saber programar puede marcar la diferencia. Desde automatizar
+          tareas hasta crear herramientas personalizadas, la programación mejora la eficiencia y la productividad.
+          También facilita la comprensión de la tecnología y promueve la adaptabilidad en un entorno digital
+          cambiante.
+        </p><br>
+        <h6 class="featurette-heading fw-normal lh-1 subtitulo-art">Para Emprendedores.</h6>
+        <p class="lead">Muchos emprendedores encuentran en la programación la posibilidad de materializar
+          sus ideas. Crear aplicaciones, plataformas web o soluciones tecnológicas propias se vuelve accesible
+          al dominar habilidades de programación.
+        </p><br>
+        <h6 class="featurette-heading fw-normal lh-1 subtitulo-art">Para la Sociedad en General.</h6>
+        <p class="lead">La programación no solo es útil a nivel individual, sino que también beneficia a la sociedad
+          en su conjunto. Desde avances en la medicina hasta soluciones para el cambio climático, la programación
+          impulsa la innovación y el progreso en múltiples áreas.
+        </p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img class="img-articulo2" src="./images/articulos/img2.jpg" alt="">
+      </div>
+    </div>
+
+    <hr class="linea">
+
+    <div class="row featurette">
+      <div class="col-md-7 contenedor-article">
+        <h6 class="featurette-heading fw-normal lh-1 subtitulo-art">Herramienta para el Emprendimiento.</h6>
+        <p class="lead">Muchos emprendedores encuentran en la programación la clave para materializar sus
+          ideas. Crear aplicaciones, páginas web o soluciones tecnológicas se ha vuelto accesible gracias a las
+          herramientas y recursos disponibles para aprender a programar.
+        </p><br>
+        <h6 class="featurette-heading fw-normal lh-1 subtitulo-art">Innovación y Desarrollo Tecnológico.</h6>
+        <p class="lead"> La programación impulsa la innovación en todas las industrias, desde la medicina hasta
+          la educación. Las tecnologías emergentes como la inteligencia artificial, el internet de las cosas y la
+          realidad
+          virtual dependen en gran medida de habilidades de programación avanzadas.
+        </p><br>
+        <h6 class="featurette-heading fw-normal lh-1 subtitulo-art">Competencias para el Futuro.</h6>
+        <p class="lead">En un mundo cada vez más digitalizado, las competencias en programación son
+          altamente valoradas por empleadores. Saber programar no solo significa poder construir software,
+          sino también entender cómo funciona la tecnología que nos rodea.
+        </p>
+      </div>
+      <div class="col-md-5">
+        <img class="img-articulo1-3" src="./images/articulos/img3.jpg" alt="">
+      </div>
+    </div>
+
+    <hr>
+
+    <h5 class="titulo-ofer">Ofertas especiales</h5>
+    <div class="parallax"></div>
+    <div class="content content-ofer">
+        <h1 class="sub-ofer">Promociones Actuales:</h1>
+        <strong><i>Descuento Especial de Inicio:</i></strong> ¡Aprovecha nuestro descuento
+            especial
+            para nuevos estudiantes! Obtén un 20% de descuento en tu primer curso al registrarte antes de fin de mes.
+        </p><br>
+        <strong><i>Oferta de Grupo:</i></strong>¿Estudias con amigos o colegas? Inscríbanse
+          juntos
+          y obtengan un descuento adicional del 10% en cada curso que elijan.</p>
+        </div>
+      <div class="parallax"></div>
+      <div class="content content-ofer">
+        
+      </div>
+    <hr>
+
+    <div class="album py-3 bg-body-tertiary" id="seccion5">
+      <h6 class="titulo3">Comprar Cursos</h6>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-3 mx-3">
+          <div class="col">
+            <div class="card shadow-sm h-100">
+              <img class="img-cursos img-fluid" src="./images/cursos/img1.jpg" alt="Imagen curso 1">
+              <div class="card-body d-flex flex-column align-items-center">
+                <p class="card-text" id="nombre-curso">Introducción a la Programación: Fundamentos de programación para principiantes.</p>
+                <p class="flex-grow-1"><b><i>Descripción:</i></b> Curso diseñado para aquellos que se inician en el mundo de la programación. Aprenderás conceptos básicos y fundamentales para desarrollar habilidades en lenguajes como Python y Java.</p>
+                <p><b><i>Precio:</i></b> <em id="precio-curso">$49.99</em> </p>
+                <div class="d-flex justify-content-between align-items-center mt-auto">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-success btn-comprar" onclick="comprarCurso(document.getElementById('nombre-curso').textContent, document.getElementById('precio-curso').textContent)">Comprar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm h-100">
+              <img class="img-cursos img-fluid" src="./images/cursos/img2.jpg" alt="Imagen curso 2">
+              <div class="card-body d-flex flex-column align-items-center">
+                <p class="card-text" id="nombre-curso2">Desarrollo Web Completo: Aprende HTML, CSS, JavaScript y frameworks como React o
+                  Angular.</p>
+                <p class="flex-grow-1"><b><i>Descripción:</i></b> Domina las tecnologías web más populares y crea sitios y
+                  aplicaciones web modernas e interactivas. Incluye proyectos prácticos y el uso de frameworks
+                  avanzados.</p><br>
+                <p ><b><i>Precio:</i></b> <em id="precio-curso2">$89.99</em> </p> 
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-success btn-comprar" onclick="comprarCurso(document.getElementById('nombre-curso2').textContent, document.getElementById('precio-curso2').textContent)">Comprar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm h-100">
+              <img class="img-cursos" src="./images/cursos/img3.jpg" alt="Imagen curso 3">
+              <div class="card-body d-flex flex-column align-items-center">
+                <p class="card-text" id="nombre-curso3">Python para Todos: Curso introductorio a Python, un lenguaje de programación
+                  versátil.</p>
+                <p class="flex-grow-1"><b><i>Descripción:</i></b> Descubre el poder de Python, desde los conceptos básicos
+                  hasta aplicaciones prácticas en análisis de datos, desarrollo web y más. Ideal para principiantes
+                  y programadores intermedios.</p>
+                <p><b><i>Precio:</i></b> <em id="precio-curso3">$59.99</em></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-success btn-comprar" onclick="comprarCurso(document.getElementById('nombre-curso3').textContent, document.getElementById('precio-curso3').textContent)">Comprar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm h-100">
+              <img class="img-cursos" src="./images/cursos/img4.jpg" alt="Imagen curso 4">
+              <div class="card-body d-flex flex-column align-items-center">
+                <p class="card-text" id="nombre-curso4">Inteligencia Artificial y Machine Learning: Curso sobre conceptos básicos de IA y
+                  ML.</p>
+                <p class="flex-grow-1"><b><i>Descripción:</i></b> Explora el fascinante mundo de la inteligencia artificial y el
+                  aprendizaje automático. Aprende a construir modelos predictivos y entender algoritmos de IA.</p><br>
+                <p><b><i>Precio:</i></b> <em id="precio-curso4">$79.99</em></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-success btn-comprar" onclick="comprarCurso(document.getElementById('nombre-curso4').textContent, document.getElementById('precio-curso4').textContent)">Comprar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm h-100">
+              <img class="img-cursos img-fluid" src="./images/cursos/img5.jpg" alt="Imagen curso 5">
+              <div class="card-body d-flex flex-column align-items-center">
+                <p class="card-text" id="nombre-curso5">Big Data y Análisis de Datos: Curso sobre manejo de grandes volúmenes de datos.</p>
+                <p><b><i>Descripción:</i></b> Aprende técnicas y herramientas para analizar y gestionar
+                  grandes conjuntos de datos. Desarrolla habilidades en procesamiento distribuido y minería de
+                  datos.</p><br>
+                <p><b><i>Precio:</i></b> <em id="precio-curso5">$79.99</em></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-success btn-comprar" onclick="comprarCurso(document.getElementById('nombre-curso5').textContent, document.getElementById('precio-curso5').textContent)">Comprar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm h-100">
+              <img class="img-cursos img-fluid" src="./images/cursos/img6.jpg" alt="Imagen curso 6">
+              <div class="card-body d-flex flex-column align-items-center">
+                <p class="card-text" id="nombre-curso6">Ciberseguridad: Curso sobre protección de datos y seguridad en línea.</p>
+                <p><b><i>Descripción:</i></b> Aprende a proteger información sensible y a detectar y prevenir
+                  ataques cibernéticos. Adquiere habilidades en análisis de vulnerabilidades y gestión de riesgos.</p>
+                <br>
+                <p class="flex-grow-1"><b><i>Precio:</i></b> <em id="precio-curso6">$69.99</em></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-success btn-comprar" onclick="comprarCurso(document.getElementById('nombre-curso6').textContent, document.getElementById('precio-curso6').textContent)">Comprar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm h-100">
+              <img class="img-cursos" src="./images/cursos/img7.jpg" alt="Imagen curso 7">
+              <div class="card-body d-flex flex-column align-items-center">
+                <p class="card-text" id="nombre-curso7">Blockchain y Criptomonedas: Introducción a la tecnología blockchain y
+                  criptomonedas.</p>
+                <p class="flex-grow-1"><b><i>Descripción:</i></b> Descubre cómo funciona la tecnología detrás de las criptomonedas
+                  y su potencial en diferentes industrias. Explora casos de uso y aplicaciones prácticas.</p><br>
+                <p><b><i>Precio:</i></b> <em id="precio-curso7">$79.99</em></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-success btn-comprar" onclick="comprarCurso(document.getElementById('nombre-curso7').textContent, document.getElementById('precio-curso7').textContent)">Comprar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm h-100">
+              <img class="img-cursos img-fluid" src="./images/cursos/img8.jpg" alt="Imagen curso 8">
+              <div class="card-body d-flex flex-column align-items-center">
+                <p class="card-text" id="nombre-curso8">Desarrollo de Aplicaciones Móviles: Aprende a crear aplicaciones para Android e
+                  iOS.</p>
+                <p class="flex-grow-1"><b><i>Descripción:</i></b> Conviértete en un desarrollador de aplicaciones móviles
+                  con este curso. Cubre desde el diseño de interfaces hasta la implementación de funcionalidades
+                  avanzadas.</p><br>
+                <p><b><i>Precio:</i></b> <em id="precio-curso8">$89.99</em></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-success btn-comprar" onclick="comprarCurso(document.getElementById('nombre-curso8').textContent, document.getElementById('precio-curso8').textContent)">Comprar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm h-100">
+              <img class="img-cursos img-fluid" src="./images/cursos/img9.jpg" alt="Imagen curso 9">
+              <div class="card-body d-flex flex-column align-items-center">
+                <p class="card-text" id="nombre-curso9">Diseño UX/UI: Aprende los principios de diseño de experiencia de usuario e interfaz
+                  de usuario.</p>
+                <p class="flex-grow-1"><b><i>Descripción:</i></b> Conviértete en un diseñador de interfaces efectivas y centradas
+                  en el usuario. Crea experiencias digitales atractivas y funcionales.</p><br>
+                <p><b><i>Precio:</i></b> <em id="precio-curso9">$99.99</em></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-success btn-comprar" onclick="comprarCurso(document.getElementById('nombre-curso9').textContent, document.getElementById('precio-curso9').textContent)">Comprar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm h-100">
+              <img class="img-cursos img-fluid" src="./images/cursos/img10.jpg" alt="Imagen curso 10">
+              <div class="card-body d-flex flex-column align-items-center">
+                <p class="card-text" id="nombre-curso10">Cloud Computing: Curso sobre servicios en la nube como AWS, Azure o Google Cloud.
+                </p>
+                <p class="flex-grow-1"><b><i>Descripción:</i></b> Domina la computación en la nube y aprende a implementar
+                  soluciones escalables y seguras. Conoce los principales servicios y arquitecturas en la nube.</p><br>
+                <p><b><i>Precio:</i></b> <em id="precio-curso10">$69.99</em></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-success btn-comprar" onclick="comprarCurso(document.getElementById('nombre-curso10').textContent, document.getElementById('precio-curso10').textContent)">Comprar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm h-100">
+              <img class="img-cursos" src="./images/cursos/img11.jpg" alt="Imagen curso 11">
+              <div class="card-body d-flex flex-column align-items-center">
+                <p class="card-text" id="nombre-curso11">IoT (Internet of Things): Introducción a la Internet de las cosas y sus
+                  aplicaciones.</p>
+                <p class="flex-grow-1"><b><i>Descripción:</i></b> Explora el mundo de los dispositivos conectados y aprende
+                  a desarrollar aplicaciones para IoT. Conecta objetos físicos a la red y crea soluciones innovadoras.
+                </p><br>
+                <p><b><i>Precio:</i></b> <em id="precio-curso11">$79.99</em></p> 
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-success btn-comprar" onclick="comprarCurso(document.getElementById('nombre-curso11').textContent, document.getElementById('precio-curso11').textContent)">Comprar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm h-100">
+              <img class="img-cursos img-fluid" src="./images/cursos/img12.jpg" alt="Imagen curso 12">
+              <div class="card-body d-flex flex-column align-items-center">
+                <p class="card-text" id="nombre-curso12">Realidad Virtual y Aum.: Curso sobre RV y RA y su aplicación en diversas
+                  industrias.</p>
+                <p class="flex-grow-1"><b><i>Descripción:</i></b> Descubre las posibilidades de la realidad virtual y aumentada
+                  en sectores como el entretenimiento, la educación y la medicina. Desarrolla experiencias inmersivas.
+                </p><br>
+                <p><b><i>Precio:</i></b> <em id="precio-curso12">$79.99</em></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-success btn-comprar" onclick="comprarCurso(document.getElementById('nombre-curso12').textContent, document.getElementById('precio-curso12').textContent)">Comprar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm h-100">
+              <img class="img-cursos img-fluid" src="./images/cursos/img13.jpg" alt="Imagen curso 13">
+              <div class="card-body d-flex flex-column align-items-center">
+                <p class="card-text" id="nombre-curso13">Desarrollo de Videojuegos: Aprende a crear videojuegos desde cero.</p>
+                <p class="flex-grow-1"><b><i>Descripción:</i></b> Sumérgete en el mundo del desarrollo de videojuegos y crea
+                  tus propias experiencias interactivas. Desde el diseño de personajes hasta la programación
+                  de jugabilidad.</p><br>
+                <p><b><i>Precio:</i></b> <em id="precio-curso13">$99.99</em></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-success btn-comprar" onclick="comprarCurso(document.getElementById('nombre-curso13').textContent, document.getElementById('precio-curso13').textContent)">Comprar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm h-100">
+              <img class="img-cursos img-fluid" src="./images/cursos/img14.jpg" alt="Imagen curso 14">
+              <div class="card-body d-flex flex-column align-items-center">
+                <p class="card-text" id="nombre-curso14">Programación en Java: Curso avanzado de programación en Java.</p>
+                <p class="flex-grow-1"><b><i>Descripción:</i></b> Mejora tus habilidades en Java con este curso avanzado. Cubre
+                  temas como programación orientada a objetos, manejo de excepciones y desarrollo de
+                  aplicaciones Java EE..</p><br>
+                <p ><b><i>Precio:</i></b> <em id="precio-curso14">$69.99</em></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-success btn-comprar" onclick="comprarCurso(document.getElementById('nombre-curso14').textContent, document.getElementById('precio-curso14').textContent)">Comprar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm h-100">
+              <img class="img-cursos img-fluid" src="./images/cursos/img15.jpg" alt="Imagen curso 15">
+              <div class="card-body d-flex flex-column align-items-center">
+                <p class="card-text" id="nombre-curso15">Robótica: Introducción a la robótica y sus aplicaciones.</p>
+                <p class="flex-grow-1"><b><i>Descripción:</i></b> Descubre el mundo de la robótica y aprende a diseñar y
+                  programar robots. Explora aplicaciones en robótica educativa, industrial y de servicios.</p><br>
+                <p><b><i>Precio:</i></b> <em id="precio-curso15">$79.99</em></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-success btn-comprar" onclick="comprarCurso(document.getElementById('nombre-curso15').textContent, document.getElementById('precio-curso15').textContent)">Comprar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm h-100">
+              <img class="img-cursos img-fluid" src="./images/cursos/img16.jpg" alt="Imagen curso 16">
+              <div class="card-body d-flex flex-column align-items-center">
+                <p class="card-text" id="nombre-curso16">Automatización de Procesos: Aprende a automatizar tareas utilizando scripts y
+                  herramientas.</p>
+                <p class="flex-grow-1"><b><i>Descripción:</i></b> Optimiza procesos y aumenta la eficiencia utilizando herramientas
+                  de automatización. Domina el scripting y la programación para tareas repetitivas.</p><br>
+                <p><b><i>Precio:</i></b> <em id="precio-curso16">$89.99</em></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-success btn-comprar" onclick="comprarCurso(document.getElementById('nombre-curso16').textContent, document.getElementById('precio-curso16').textContent)">Comprar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm h-100">
+              <img class="img-cursos img-fluid" src="./images/cursos/img17.jpg" alt="Imagen curso 17">
+              <div class="card-body d-flex flex-column align-items-center">
+                <p class="card-text" id="nombre-curso17">Seguridad Informática: Curso sobre técnicas de seguridad informática y prevención
+                  de ataques cibernéticos.</p>
+                <p class="flex-grow-1"><b><i>Descripción:</i></b> Conviértete en un experto en seguridad informática y protege
+                  sistemas y redes contra amenazas cibernéticas. Aprende técnicas de hacking ético.</p><br>
+                <p><b><i>Precio:</i></b> <em id="precio-curso17">$69.99</em></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-success btn-comprar" onclick="comprarCurso(document.getElementById('nombre-curso17').textContent, document.getElementById('precio-curso17').textContent)">Comprar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm h-100">
+              <img class="img-cursos img-fluid" src="./images/cursos/img18.jpg" alt="Imagen curso 18">
+              <div class="card-body d-flex flex-column align-items-center">
+                <p class="card-text" id="nombre-curso18">Análisis de Datos con Python: Curso avanzado análisis de datos con Python y
+                  bibliotecas como Pandas y NumPy.</p>
+                <p class="flex-grow-1"><b><i>Descripción:</i></b> Profundiza en el análisis de datos con Python y domina técnicas
+                  avanzadas de manipulación y visualización de datos. Aplica machine learning para insights
+                  poderosos.</p><br>
+                <p><b><i>Precio:</i></b> <em id="precio-curso18">$89.99</em></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-success btn-comprar" onclick="comprarCurso(document.getElementById('nombre-curso18').textContent, document.getElementById('precio-curso18').textContent)">Comprar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm h-100">
+              <img class="img-cursos img-fluid" src="./images/cursos/img19.jpg" alt="Imagen curso 19">
+              <div class="card-body d-flex flex-column align-items-center">
+                <p class="card-text" id="nombre-curso19">Desarrollo de Aplicaciones Empresariales: Aprende a crear aplicaciones
+                  empresariales escalables y seguras.</p>
+                <p class="flex-grow-1"><b><i>Descripción:</i></b> Diseña y desarrolla aplicaciones empresariales robustas y
+                  escalables. Aprende sobre arquitecturas empresariales y buenas prácticas de desarrollo.</p>
+                <p><b><i>Precio:</i></b> <em id="precio-curso19">$99.99</em></p> 
+  
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-success btn-comprar" onclick="comprarCurso(document.getElementById('nombre-curso19').textContent, document.getElementById('precio-curso19').textContent)">Comprar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm h-100">
+              <img class="img-cursos img-fluid" src="./images/cursos/img20.jpg" alt="Imagen curso 20">
+              <div class="card-body d-flex flex-column align-items-center">
+                <p class="card-text" id="nombre-curso20">Gestión de Proyectos Tecnológicos: Curso sobre metodologías y herramientas para la
+                  gestión de proyectos tecnológicos.</p>
+                <p class="flex-grow-1"><b><i>Descripción:</i></b> Domina las mejores prácticas en gestión de proyectos tecnológicos.
+                  Aprende a planificar, ejecutar y controlar proyectos de TI de manera efectiva.</p>
+                <p><b><i>Precio:</i></b> <em id="precio-curso20">$79.99</em></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-success btn-comprar" onclick="comprarCurso(document.getElementById('nombre-curso20').textContent, document.getElementById('precio-curso20').textContent)">Comprar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <h6 class="titulo-testimonios">Testimonios de Nuestros Estudiantes</h6>
+    <section class="contenedor-testimonios">
+      
+      <article>
+        <div class="card border-primary mb-3 card-test" style="max-width: 18rem;">
+          <div class="card-header bg-transparent border-primary">Estudiante: María López</div>
+          <div class="card-body text-primary">
+            <h6 class="card-title">Curso: Data Analysis con Python</h6>
+            <p class="card-text">"La escuela de programación me ayudó a mejorar mis habilidades y ahora trabajo como analista de datos en una gran empresa."</p>
+          </div>
+          <div class="card-footer bg-transparent border-primary">Fecha: Marzo 2024</div>
+        </div>
+      </article>
+      <article>
+        <div class="card border-primary mb-3 card-test" style="max-width: 18rem;">
+          <div class="card-header bg-transparent border-primary">Estudiante: Juan Pérez</div>
+          <div class="card-body text-primary">
+            <h6 class="card-title">Curso: Desarrollo Web Full-Stack</h6>
+            <p class="card-text">"Gracias a los cursos de la escuela de programación, he conseguido un puesto como desarrollador full-stack en una startup tecnológica."</p>
+          </div>
+          <div class="card-footer bg-transparent border-primary">Fecha: Febrero 2024</div>
+        </div>
+      </article>
+      <article>
+        <div class="card border-primary mb-3 card-test" style="max-width: 18rem;">
+          <div class="card-header bg-transparent border-primary">Estudiante: Ana Martínez</div>
+          <div class="card-body text-primary">
+            <h6 class="card-title">Curso: Introducción a la Inteligencia Artificial</h6>
+            <p class="card-text">"La escuela me brindó una base sólida en inteligencia artificial, lo que me permitió avanzar en mi carrera académica y profesional."</p>
+          </div>
+          <div class="card-footer bg-transparent border-primary">Fecha: Enero 2024</div>
+        </div>
+      </article>
+      <article>
+        <div class="card border-primary mb-3 card-test" style="max-width: 18rem;">
+          <div class="card-header bg-transparent border-primary">Estudiante: Carlos Gómez</div>
+          <div class="card-body text-primary">
+            <h6 class="card-title">Curso: Análisis de Datos con Python</h6>
+            <p class="card-text">"Los conocimientos adquiridos en la escuela me ayudaron a obtener una certificación en análisis de datos y conseguir un mejor empleo."</p>
+          </div>
+          <div class="card-footer bg-transparent border-primary">Fecha: Diciembre 2023</div>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer bg-dark-blue text-light py-5">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                  <h5>Contacto</h5>
+                  <ul class="list-unstyled">
+                      <li>Teléfono: +1 (123) 456-7890</li>
+                      <li>Correo: info@codesphereacademy.com</li>
+                      <li>Dirección: Av. Principal #123, Ciudad</li>
+                  </ul>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                  <h5>Enlaces</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="#">Inicio</a></li>
+                      <li><a href="#">Cursos</a></li>
+                      <li><a href="#">Nosotros</a></li>
+                      <li><a href="#">Contacto</a></li>
+                  </ul>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                  <h5>Suscríbete</h5>
+                  <p>Recibe las últimas actualizaciones y ofertas especiales.</p>
+                  <form action="#" method="POST">
+                      <div class="input-group mb-3">
+                          <input type="email" class="form-control" placeholder="Correo electrónico" aria-label="Correo electrónico" aria-describedby="basic-addon2">
+                          <button class="btn btn-primary btn-suscribirse" type="submit">Suscribirse</button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+      <div class="container text-center mt-4">
+          <p>&copy; 2024 CodeSphere Academy. Todos los derechos reservados.</p>
+      </div>
+  </footer>
+</body>
+</html>
